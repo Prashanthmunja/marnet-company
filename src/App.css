@@ -1,288 +1,313 @@
-/* ===========================
+/* =========================
    GLOBAL
-=========================== */
+========================= */
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Segoe UI", sans-serif;
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:"Segoe UI",sans-serif;
 }
 
-body {
-  background: #f8fafc;
-  color: #111827;
+body{
+  background:#f8fafc;
+  color:#111827;
 }
 
-/* ===========================
+/* =========================
    NAVBAR
-=========================== */
+========================= */
 
-.navbar {
-  height: 90px;
-  background: #ffffff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 70px;
-  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+.navbar{
+  height:90px;
+  background:#ffffff;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:0 70px;
+  box-shadow:0 2px 15px rgba(0,0,0,0.08);
+  position:sticky;
+  top:0;
+  z-index:1000;
 }
 
-.logo-section {
-  display: flex;
-  flex-direction: column;
+.logo-section{
+  display:flex;
+  flex-direction:column;
 }
 
-.logo {
-  color: #082b63;
-  font-size: 38px;
-  font-weight: 800;
+.logo{
+  color:#082b63;
+  font-size:38px;
+  font-weight:800;
 }
 
-.logo-subtitle {
-  color: #6b7280;
-  font-size: 11px;
-  letter-spacing: 3px;
+.logo-subtitle{
+  color:#6b7280;
+  font-size:11px;
+  letter-spacing:3px;
 }
 
-.nav-links {
-  display: flex;
-  list-style: none;
-  gap: 28px;
+.nav-links{
+  display:flex;
+  list-style:none;
+  gap:28px;
 }
 
-.nav-links li {
-  color: #111827;
-  font-size: 14px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: 0.3s;
+.nav-links li{
+  color:#111827;
+  font-size:14px;
+  font-weight:600;
+  cursor:pointer;
+  transition:0.3s;
 }
 
-.nav-links li:hover {
-  color: #ef4444;
+.nav-links li:hover{
+  color:#ef4444;
 }
 
-.contact-btn {
-  background: #ef4444;
-  color: white;
-  border: none;
-  padding: 14px 24px;
-  border-radius: 6px;
-  font-weight: 700;
-  cursor: pointer;
-  transition: 0.3s;
+.contact-btn{
+  background:#ef4444;
+  color:white;
+  border:none;
+  padding:14px 24px;
+  border-radius:6px;
+  font-weight:700;
+  cursor:pointer;
+  transition:0.3s;
 }
 
-.contact-btn:hover {
-  background: #dc2626;
-  transform: translateY(-2px);
+.contact-btn:hover{
+  background:#dc2626;
+  transform:translateY(-2px);
 }
 
-/* ===========================
-   HERO SECTION
-=========================== */
+/* =========================
+   HERO
+========================= */
 
-.hero {
-  height: 780px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  display: flex;
-  align-items: center;
+.hero{
+  height:750px;
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  display:flex;
+  align-items:center;
 }
 
-.hero-content {
-  max-width: 700px;
-  margin-left: 90px;
-  color: white;
-
-  animation: slideInLeft 1.2s ease;
+.hero-content{
+  max-width:700px;
+  margin-left:90px;
+  color:white;
+  animation:slideInLeft 1s ease;
 }
 
-.hero-content h1 {
-  font-size: 70px;
-  line-height: 1.1;
-  font-weight: 800;
-  margin-bottom: 25px;
+.hero-content h1{
+  font-size:70px;
+  line-height:1.1;
+  font-weight:800;
+  margin-bottom:25px;
 }
 
-.hero-content p {
-  font-size: 22px;
-  line-height: 1.8;
-  margin-bottom: 35px;
-  color: #e5e7eb;
+.hero-content p{
+  font-size:22px;
+  line-height:1.8;
+  margin-bottom:35px;
 }
 
-.hero-buttons {
-  display: flex;
-  gap: 18px;
+.hero-buttons{
+  display:flex;
+  gap:20px;
 }
 
-.btn-red {
-  background: #ef4444;
-  color: white;
-  border: none;
-  padding: 16px 30px;
-  border-radius: 6px;
-  font-weight: 700;
-  cursor: pointer;
-  transition: 0.3s;
+.btn-red{
+  background:#ef4444;
+  color:white;
+  border:none;
+  padding:16px 30px;
+  border-radius:6px;
+  font-weight:700;
+  cursor:pointer;
 }
 
-.btn-red:hover {
-  background: #dc2626;
-  transform: translateY(-3px);
+.btn-red:hover{
+  background:#dc2626;
 }
 
-.btn-blue {
-  background: transparent;
-  color: white;
-  border: 2px solid white;
-  padding: 16px 30px;
-  border-radius: 6px;
-  font-weight: 700;
-  cursor: pointer;
-  transition: 0.3s;
+.btn-blue{
+  background:transparent;
+  color:white;
+  border:2px solid white;
+  padding:16px 30px;
+  border-radius:6px;
+  font-weight:700;
+  cursor:pointer;
 }
 
-.btn-blue:hover {
-  background: white;
-  color: #082b63;
+.btn-blue:hover{
+  background:white;
+  color:#082b63;
 }
 
-/* ===========================
-   SERVICES SECTION
-=========================== */
+/* =========================
+   SERVICES
+========================= */
 
-.services {
-  padding: 100px 80px;
-  background: white;
+.services{
+  padding:100px 80px;
+  background:white;
 }
 
-.section-title {
-  text-align: center;
-  color: #082b63;
-  font-size: 42px;
-  margin-bottom: 60px;
+.section-title{
+  text-align:center;
+  font-size:42px;
+  color:#082b63;
+  margin-bottom:60px;
+  font-weight:700;
 }
 
-.service-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
+.service-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:30px;
 }
 
-.service-card {
-  background: white;
-  padding: 35px;
-  border-radius: 12px;
-  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
-  transition: 0.4s;
+.service-card{
+  background:white;
+  padding:35px;
+  border-radius:15px;
+  box-shadow:0 8px 25px rgba(0,0,0,0.08);
+  transition:0.4s;
 }
 
-.service-card:hover {
-  transform: translateY(-10px);
+.service-card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 15px 35px rgba(0,0,0,0.15);
 }
 
-.service-card h3 {
-  color: #082b63;
-  margin-bottom: 15px;
+.service-card h3{
+  color:#082b63;
+  margin-bottom:15px;
+  font-size:22px;
 }
 
-.service-card p {
-  color: #6b7280;
-  line-height: 1.7;
+.service-card p{
+  color:#6b7280;
+  line-height:1.8;
 }
 
-/* ===========================
+/* =========================
+   STATS
+========================= */
+
+.stats{
+  background:#082b63;
+  color:white;
+  padding:80px;
+  display:flex;
+  justify-content:space-around;
+  text-align:center;
+}
+
+.stats h2{
+  font-size:50px;
+  color:#ef4444;
+  margin-bottom:10px;
+}
+
+.stats p{
+  font-size:18px;
+}
+
+/* =========================
    FOOTER
-=========================== */
+========================= */
 
-.footer {
-  background: #082b63;
-  color: white;
-  padding: 70px 80px;
+.footer{
+  background:#111827;
+  color:white;
+  text-align:center;
+  padding:60px 20px;
 }
 
-.footer h3 {
-  margin-bottom: 20px;
+.footer h3{
+  font-size:28px;
+  margin-bottom:20px;
 }
 
-.footer p {
-  color: #d1d5db;
-  line-height: 1.8;
+.footer p{
+  color:#d1d5db;
+  margin-bottom:10px;
 }
 
-/* ===========================
-   ANIMATIONS
-=========================== */
+/* =========================
+   ANIMATION
+========================= */
 
-@keyframes slideInLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-80px);
+@keyframes slideInLeft{
+  from{
+    opacity:0;
+    transform:translateX(-80px);
   }
 
-  to {
-    opacity: 1;
-    transform: translateX(0);
+  to{
+    opacity:1;
+    transform:translateX(0);
   }
 }
 
-/* ===========================
+/* =========================
    RESPONSIVE
-=========================== */
+========================= */
 
-@media (max-width: 1024px) {
-  .navbar {
-    padding: 0 30px;
+@media(max-width:1024px){
+
+  .hero-content h1{
+    font-size:52px;
   }
 
-  .hero-content {
-    margin-left: 40px;
-  }
-
-  .hero-content h1 {
-    font-size: 50px;
-  }
-
-  .service-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .service-grid{
+    grid-template-columns:repeat(2,1fr);
   }
 }
 
-@media (max-width: 768px) {
-  .nav-links {
-    display: none;
+@media(max-width:768px){
+
+  .navbar{
+    padding:0 20px;
   }
 
-  .hero {
-    height: auto;
-    padding: 100px 20px;
+  .nav-links{
+    display:none;
   }
 
-  .hero-content {
-    margin-left: 0;
+  .hero{
+    padding:100px 20px;
+    height:auto;
   }
 
-  .hero-content h1 {
-    font-size: 40px;
+  .hero-content{
+    margin-left:0;
   }
 
-  .hero-content p {
-    font-size: 18px;
+  .hero-content h1{
+    font-size:40px;
   }
 
-  .hero-buttons {
-    flex-direction: column;
+  .hero-content p{
+    font-size:18px;
   }
 
-  .service-grid {
-    grid-template-columns: 1fr;
+  .hero-buttons{
+    flex-direction:column;
+  }
+
+  .service-grid{
+    grid-template-columns:1fr;
+  }
+
+  .stats{
+    flex-direction:column;
+    gap:30px;
   }
 }
