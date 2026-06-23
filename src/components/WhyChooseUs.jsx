@@ -1,14 +1,33 @@
 function WhyChooseUs() {
-  return (
-    <section>
-      <h2>Why Choose Marnet</h2>
+  const points = [
+    "Industry-Focused Expertise",
+    "End-to-End Solutions",
+    "Results-Driven Approach",
+    "Global Reach",
+    "Dedicated Support",
+    "Growth-Oriented Strategy"
+  ];
 
-      <ul>
-        <li>Industry Expertise</li>
-        <li>Innovative Solutions</li>
-        <li>Experienced Team</li>
-        <li>Client Focused</li>
-      </ul>
+  return (
+    <section className="why-us">
+      <div className="why-left">
+        <h2>Your Partner for Digital Growth</h2>
+
+        <p>
+          We combine creativity, technology and industry expertise
+          to deliver solutions that generate measurable business results.
+        </p>
+
+        <button>Know More About Us</button>
+      </div>
+
+      <div className="why-right">
+        {points.map((item, index) => (
+          <div className="feature" key={index}>
+            ✓ {item}
+          </div>
+        ))}
+      </div>
     </section>
   );
 }
